@@ -2,7 +2,7 @@
  * Garden scene geometry: converting between screen and SVG coordinates, depth
  * (nearer things overlap farther ones), and the "can't plant here" rules + hints.
  *
- * One link in the page-logic class chain (see the script order at the bottom of Portfolio.html):
+ * One link in the page-logic class chain (see the script order at the bottom of index.html):
  *   GardenScene extends ClickFlowers
  */
 class GardenScene extends ClickFlowers {

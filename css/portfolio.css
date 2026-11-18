@@ -99,7 +99,7 @@ h1, h2, h3 { text-wrap: balance; }
   position: fixed;
   inset: 0;
   z-index: 70;
-  background-image: url("../assets/grain.svg");
+  background-image: url("../images/portfolio/grain.svg");
   opacity: .35;
   mix-blend-mode: multiply;
   pointer-events: none;
@@ -604,7 +604,7 @@ h1, h2, h3 { text-wrap: balance; }
 .garden-plant__remove-disc { fill: #F7F0E2; stroke: #3A2E22; stroke-width: 1.5; }
 .garden-plant__remove-x { fill: none; stroke: #3A2E22; stroke-width: 1.8; stroke-linecap: round; }
 
-/* Garden artwork JS copies from the <template>s in Portfolio.html and animates. Fixed fills stay in the drawings;
+/* Garden artwork JS copies from the <template>s in index.html and animates. Fixed fills stay in the drawings;
    colours that differ from one copy to the next live here. */
 .garden-orange {
   position: absolute;
@@ -1018,7 +1018,7 @@ h1, h2, h3 { text-wrap: balance; }
 
 
 /* --------------------------------------------------------------------------
-   Floating pieces — written in Portfolio.html; app.js / portfolio.js only
+   Floating pieces — written in index.html; app.js / portfolio.js only
    move them, fill in text and flip data-* attributes
    -------------------------------------------------------------------------- */
 /* Side nav on the right of the full portfolio */
@@ -1152,11 +1152,11 @@ h1, h2, h3 { text-wrap: balance; }
 }
 .page-fade[data-active="true"],
 .page-fade[data-active="true"] .page-fade__text { opacity: 1; }
-/* arriving back from a case study: already covered on the first frame (see the <head> of Portfolio.html) */
+/* arriving back from a case study: already covered on the first frame (see the <head> of index.html) */
 html[data-arriving="true"] .page-fade,
 html[data-arriving="true"] .page-fade__text { opacity: 1; transition: none; }
 
-/* Scroll path in the page margins: one stop (sign + bush + grass) per section, written in Portfolio.html.
+/* Scroll path in the page margins: one stop (sign + bush + grass) per section, written in index.html.
    app.js sets each stop's left/top, --board-max on .walk-path, and data-shown once you scroll to it */
 .walk-path { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
 .walk-path__defs { position: absolute; }

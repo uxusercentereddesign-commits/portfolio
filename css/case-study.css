@@ -5,7 +5,7 @@
 /* ---------- Tokens ---------- */
 :root {
   /* colour */
-  /* the portfolio's warm palette (css/style.css), so both pages feel like one site */
+  /* the portfolio's warm palette (css/portfolio.css), so both pages feel like one site */
   --bg: #EFE6D4;           /* page — portfolio --color-bg */
   --surface: #FFFDF8;      /* cards, chips — portfolio --color-paper */
   --ink: #2E2418;          /* headings — portfolio --color-text */
@@ -166,7 +166,7 @@ h4 { font-size: 15px; line-height: 24px; font-weight: 600; color: var(--ink-stro
 .topbar__links { display: flex; gap: 22px; }
 .topbar__back { display: flex; align-items: center; gap: 8px; }   /* like the portfolio's .portfolio-nav__back */
 
-/* ---------- Footer (matches the portfolio's sign-off: css/style.css .thanks__bottom) ---------- */
+/* ---------- Footer (matches the portfolio's sign-off: css/portfolio.css .thanks__bottom) ---------- */
 .site-footer {
   width: min(var(--wide-w), 100% - var(--gutter) * 2);   /* in line with the project image, like the top bar */
   margin-inline: auto;
@@ -184,7 +184,7 @@ h4 { font-size: 15px; line-height: 24px; font-weight: 600; color: var(--ink-stro
 .site-footer__link { color: inherit; text-decoration: none; transition: color 0.2s; }
 @media (hover: hover) { .site-footer__link:hover { color: var(--accent); } }
 
-/* ---------- Side nav (matches portfolio: css/style.css .side-nav) ---------- */
+/* ---------- Side nav (matches portfolio: css/portfolio.css .side-nav) ---------- */
 .side-nav {
   position: fixed;
   top: 50%;

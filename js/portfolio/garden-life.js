@@ -1,7 +1,7 @@
 /*
  * Life in the garden: the wandering sheep + kids, picnic, birds, butterflies and falling oranges.
  *
- * One link in the page-logic class chain (see the script order at the bottom of Portfolio.html):
+ * One link in the page-logic class chain (see the script order at the bottom of index.html):
  *   GardenLife extends GardenPlants
  */
 class GardenLife extends GardenPlants {

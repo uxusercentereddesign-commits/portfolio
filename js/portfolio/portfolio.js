@@ -2,7 +2,7 @@
  * Portfolio page: project-row previews, side nav,
  * the After Hours carousel, and copy-email.
  *
- * First link in the page-logic class chain (see the script order at the bottom of Portfolio.html).
+ * First link in the page-logic class chain (see the script order at the bottom of index.html).
  */
 class Portfolio {
   constructor(props) {
@@ -10,14 +10,14 @@ class Portfolio {
     this.gardenEl = document.querySelector('.garden');   // found once, used by every garden feature
   }
 
-  // A fresh copy of a piece of garden artwork from its <template> at the bottom of Portfolio.html.
+  // A fresh copy of a piece of garden artwork from its <template> at the bottom of index.html.
   // (SVG pieces sit inside a bare <svg> there so the browser reads them as SVG; the copy is the piece itself.)
   art(id) {
     const piece = document.getElementById(id).content.firstElementChild;
     return (piece.tagName === 'svg' && !piece.attributes.length ? piece.firstElementChild : piece).cloneNode(true);
   }
 
-  // Wires the portfolio's moving parts. The project rows and cards are written in Portfolio.html
+  // Wires the portfolio's moving parts. The project rows and cards are written in index.html
   // and are plain links (target="_blank" opens the case study in a new tab).
   setupPortfolio() {
     // garden panel rows: hovering shows a small preview of the cover (data-preview) beside the panel

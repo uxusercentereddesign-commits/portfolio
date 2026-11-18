@@ -2,9 +2,9 @@
  * Page logic — the main class. Starts everything (start()), wires the garden's buttons (setupGarden()),
  * the scroll "walk", and the garden ↔ portfolio switch (enterGarden()).
  *
- * Feature code lives in js/parts/*.js as a chain of classes:
+ * Feature code lives in js/portfolio/*.js as a chain of classes:
  *   Portfolio → ClickFlowers → GardenScene → GardenHome → GardenPlants → GardenLife → Component
- * The script tags at the bottom of Portfolio.html load them in that order.
+ * The script tags at the bottom of index.html load them in that order.
  */
 class Component extends GardenLife {
   start() {
@@ -27,8 +27,8 @@ class Component extends GardenLife {
     this.openFromLink();
   }
 
-  // Arriving from a case study's "back to portfolio" link: Portfolio.html#garden (it was opened from the garden)
-  // lands on the garden; Portfolio.html#work (opened from inside the portfolio) opens the portfolio at Projects.
+  // Arriving from a case study's "back to portfolio" link: index.html#garden (it was opened from the garden)
+  // lands on the garden; index.html#work (opened from inside the portfolio) opens the portfolio at Projects.
   // Either way behind the same soft fade as the garden switch (already covered, as the page is only just
   // opening; then it fades away).
   async openFromLink() {
@@ -260,7 +260,7 @@ class Component extends GardenLife {
       settle = setTimeout(() => { this.buildPicnic(); if (this.homeEl) { this.homePos(); this.homeExtras(); } }, 300);
     }).observe(document.querySelector('.garden-scene'));
   }
-  // Scroll walk: the stops are written in Portfolio.html. JS lines each one up beside its section
+  // Scroll walk: the stops are written in index.html. JS lines each one up beside its section
   // (right or left margin from data-side) and hides the walk when the margins are too narrow.
   placeWalk() {
     const root = document.querySelector('[data-walk-root]'), walk = root.querySelector('.walk-path');

@@ -1,7 +1,7 @@
 /*
  * Click flowers: draws a little SVG plant that pops up wherever you click.
  *
- * One link in the page-logic class chain (see the script order at the bottom of Portfolio.html):
+ * One link in the page-logic class chain (see the script order at the bottom of index.html):
  *   ClickFlowers extends Portfolio
  */
 class ClickFlowers extends Portfolio {

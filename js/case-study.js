@@ -3,7 +3,7 @@
   /* ---------- Back link: return to where the case study was opened from ----------
      The garden's project rows open this page with ?from=garden; the portfolio's project cards don't */
   const back = document.querySelector(".topbar__back");
-  if (back && new URLSearchParams(location.search).get("from") === "garden") back.href = "Portfolio.html#garden";
+  if (back && new URLSearchParams(location.search).get("from") === "garden") back.href = "index.html#garden";
 
   /* ---------- Carousels ---------- */
   document.querySelectorAll("[data-carousel]").forEach((root) => {
@@ -95,8 +95,8 @@
   const boxImg = box.querySelector("img");
   let lastFocus = null;
 
-  // high-res copies live in images/full/ with the same file name
-  const fullSrc = (img) => img.getAttribute("src").replace("images/", "images/full/");
+  // high-res copies live in images/marketing-dashboard/full/ with the same file name
+  const fullSrc = (img) => img.getAttribute("src").replace("images/marketing-dashboard/", "images/marketing-dashboard/full/");
 
   function openViewer(img) {
     lastFocus = document.activeElement;

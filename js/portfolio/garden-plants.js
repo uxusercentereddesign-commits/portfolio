@@ -1,7 +1,7 @@
 /*
  * Planting: click to plant a tree / bush / flower, drag to sketch, and "garden in bloom" (lush) mode.
  *
- * One link in the page-logic class chain (see the script order at the bottom of Portfolio.html):
+ * One link in the page-logic class chain (see the script order at the bottom of index.html):
  *   GardenPlants extends GardenHome
  */
 class GardenPlants extends GardenHome {

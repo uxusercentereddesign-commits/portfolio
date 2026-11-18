@@ -1,7 +1,7 @@
 /*
  * Your home in the garden: placing, dragging and removing it.
  *
- * One link in the page-logic class chain (see the script order at the bottom of Portfolio.html):
+ * One link in the page-logic class chain (see the script order at the bottom of index.html):
  *   GardenHome extends GardenScene
  */
 class GardenHome extends GardenScene {
@@ -58,7 +58,7 @@ class GardenHome extends GardenScene {
     el.style.transformOrigin = '50% 95%'; el.style.scale = k.toFixed(3);
     if (this.followHome) this.followHome();
   }
-  // the house drawing (its <template> is in Portfolio.html)
+  // the house drawing (its <template> is in index.html)
   homeSVG() { return document.getElementById('garden-home-art').innerHTML; }
   setCursor() {
     const plant = "<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path d='M16 30 V14' stroke='#5E6B3A' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M16 18 C9 18 6 13 6 8 C12 8 16 12 16 18Z' fill='#8DA35F' stroke='#3F4A24' stroke-width='1.2'/><path d='M16 14 C22 14 26 9 26 4 C20 4 16 8 16 14Z' fill='#A8B978' stroke='#3F4A24' stroke-width='1.2'/></svg>";

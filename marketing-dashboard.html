@@ -8,7 +8,7 @@
 
   <!-- the same self-hosted fonts as the portfolio (Fraunces, DM Sans, IBM Plex Mono) -->
   <link rel="stylesheet" href="css/fonts.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/case-study.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,7 +16,7 @@
   <!-- Top bar -->
   <header class="topbar">
     <!-- same as the portfolio's "back to your garden" link; opens the portfolio at the projects -->
-    <a class="topbar__back" href="Portfolio.html#work"><span aria-hidden="true">↰</span><span>back to portfolio</span></a>
+    <a class="topbar__back" href="index.html#work"><span aria-hidden="true">↰</span><span>back to portfolio</span></a>
     <nav class="topbar__links" aria-label="Social">
       <a href="https://www.linkedin.com/in/shreya-sinha-800814156/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://drive.google.com/file/d/1gBMyA2F8exDv7If3iEyOvsQNI84Tqm3j/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
@@ -51,7 +51,7 @@
       </div>
       <figure class="media media--wide">
         <!-- TODO: replace this placeholder with the final dashboard image, e.g.
-             <img src="images/hero.webp" width="860" height="489" alt="The final Marketing Dashboard in Kylas CRM" /> -->
+             <img src="images/marketing-dashboard/hero.webp" width="860" height="489" alt="The final Marketing Dashboard in Kylas CRM" /> -->
         <div class="placeholder" role="img" aria-label="Final Marketing Dashboard image coming soon"></div>
         <figcaption>The final Marketing Dashboard</figcaption>
       </figure>
@@ -148,11 +148,11 @@
       </div>
       <div class="stack-48 pt-8">
         <figure class="media">
-          <img src="images/quick-draft-1.webp" width="644" height="363" loading="lazy" alt="Quick draft of the Marketing Dashboard: KPI cards on top and a list of campaigns below." />
+          <img src="images/marketing-dashboard/quick-draft-1.webp" width="644" height="363" loading="lazy" alt="Quick draft of the Marketing Dashboard: KPI cards on top and a list of campaigns below." />
           <figcaption>There's no point showing a list of campaigns with only a name and description and no metrics. Decisions depend on a few key metrics; detailed metrics are only for deeper analysis.</figcaption>
         </figure>
         <figure class="media">
-          <img src="images/quick-draft-2.webp" width="640" height="359" loading="lazy" alt="Quick draft of a campaign detail page with overview metrics and a channel-wise performance chart." />
+          <img src="images/marketing-dashboard/quick-draft-2.webp" width="640" height="359" loading="lazy" alt="Quick draft of a campaign detail page with overview metrics and a channel-wise performance chart." />
         </figure>
       </div>
     </section>
@@ -193,7 +193,7 @@
           <p>Through MQL and SQL mapping, as every company defines MQL and SQL differently.</p>
         </div>
         <figure class="media">
-          <img src="images/mql-sql-mapping.webp" width="640" height="192" loading="lazy" alt="Add Parameters form: MQL is defined for the Lead entity using Pipeline In Pipeline 1 and Pipeline 2." />
+          <img src="images/marketing-dashboard/mql-sql-mapping.webp" width="640" height="192" loading="lazy" alt="Add Parameters form: MQL is defined for the Lead entity using Pipeline In Pipeline 1 and Pipeline 2." />
         </figure>
       </article>
 
@@ -306,16 +306,16 @@
               <p class="label">Key decision</p>
               <h4>Separate dashboards, or one?</h4>
             </div>
-            <img class="decision__toggle" src="images/toggle.webp" width="201" height="36" alt="Manager View / Operator View toggle" />
+            <img class="decision__toggle" src="images/marketing-dashboard/toggle.webp" width="201" height="36" alt="Manager View / Operator View toggle" />
           </div>
           <p>At first we added the option for different dashboards. Later, we designed a single dashboard where managers see the overall picture and operators can drill down for detailed analysis.</p>
         </div>
         <figure class="media">
-          <img src="images/dashboard-overview.webp" width="644" height="363" loading="lazy" alt="Marketing Dashboard overview: KPI cards (campaigns, budget, leads, MQL, SQL, conversion rate) above a table of Kylas campaigns." />
+          <img src="images/marketing-dashboard/dashboard-overview.webp" width="644" height="363" loading="lazy" alt="Marketing Dashboard overview: KPI cards (campaigns, budget, leads, MQL, SQL, conversion rate) above a table of Kylas campaigns." />
           <figcaption class="pb-36">Overview: KPIs and the list of Kylas campaigns</figcaption>
         </figure>
         <figure class="media">
-          <img src="images/dashboard-channels.webp" width="644" height="363" loading="lazy" alt="Marketing Dashboard with a channel-wise performance chart next to a conversion funnel from impressions to SQL." />
+          <img src="images/marketing-dashboard/dashboard-channels.webp" width="644" height="363" loading="lazy" alt="Marketing Dashboard with a channel-wise performance chart next to a conversion funnel from impressions to SQL." />
           <figcaption class="pb-36">Channel-wise performance and the conversion funnel</figcaption>
         </figure>
         </div>
@@ -360,16 +360,16 @@
             <div class="carousel__viewport">
               <div class="carousel__track">
                 <div class="carousel__slide" data-caption="Structure wasn’t looking like a funnel, more like a bar graph." role="group" aria-roledescription="slide" aria-label="1 of 4">
-                  <img src="images/funnel-1.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 1: right-aligned bars of decreasing width with conversion percentages beside them." />
+                  <img src="images/marketing-dashboard/funnel-1.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 1: right-aligned bars of decreasing width with conversion percentages beside them." />
                 </div>
                 <div class="carousel__slide" data-caption="The triangular space between the conversion and funnel graph was looking so odd." role="group" aria-roledescription="slide" aria-label="2 of 4">
-                  <img src="images/funnel-2.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 2: bars with a separate grey conversion column, leaving a triangular gap." />
+                  <img src="images/marketing-dashboard/funnel-2.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 2: bars with a separate grey conversion column, leaving a triangular gap." />
                 </div>
                 <div class="carousel__slide" data-caption="The conversion data between bars made the funnel too tall." role="group" aria-roledescription="slide" aria-label="3 of 4">
-                  <img src="images/funnel-3.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 3: centred bars with conversion rates placed between each bar." />
+                  <img src="images/marketing-dashboard/funnel-3.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 3: centred bars with conversion rates placed between each bar." />
                 </div>
                 <div class="carousel__slide" data-caption="Incorporated all metrics inside the bar, increasing the bar height." data-final role="group" aria-roledescription="slide" aria-label="4 of 4">
-                  <img src="images/funnel-4.webp" width="640" height="354" loading="lazy" alt="Final funnel: taller bars with the label, value and drop-off percentage inside each bar." />
+                  <img src="images/marketing-dashboard/funnel-4.webp" width="640" height="354" loading="lazy" alt="Final funnel: taller bars with the label, value and drop-off percentage inside each bar." />
                 </div>
               </div>
             </div>
@@ -393,14 +393,14 @@
             <div class="carousel__viewport">
               <div class="carousel__track">
                 <div class="carousel__slide" data-caption="Vertical view: Easy to understand, but deeper metrics needed extra clicks and comparing Campaigns, Ad sets and Ads was hard." role="group" aria-roledescription="slide" aria-label="1 of 3">
-                  <img src="images/view-1.webp" width="640" height="322" loading="lazy" alt="Vertical view: a campaign table where ad sets and ads expand underneath each campaign." />
+                  <img src="images/marketing-dashboard/view-1.webp" width="640" height="322" loading="lazy" alt="Vertical view: a campaign table where ad sets and ads expand underneath each campaign." />
                 </div>
                 <div class="carousel__slide" data-caption="Horizontal view: Matches the horizontal layout users already know from Google Ads and Meta Ads, reducing the learning curve." role="group" aria-roledescription="slide" aria-label="2 of 3">
-                  <img src="images/view-2.webp" width="640" height="322" loading="lazy" alt="Horizontal view: Campaigns, Adsets and Ads shown as three side-by-side columns." />
+                  <img src="images/marketing-dashboard/view-2.webp" width="640" height="322" loading="lazy" alt="Horizontal view: Campaigns, Adsets and Ads shown as three side-by-side columns." />
                 </div>
                 <!-- TODO: replace the caption below with the final one -->
                 <div class="carousel__slide" data-caption="Add a caption for this view." data-final role="group" aria-roledescription="slide" aria-label="3 of 3">
-                  <img src="images/view-3.webp" width="640" height="322" loading="lazy" alt="Final view: Campaign, Adset and Ads tabs over a single campaign table." />
+                  <img src="images/marketing-dashboard/view-3.webp" width="640" height="322" loading="lazy" alt="Final view: Campaign, Adset and Ads tabs over a single campaign table." />
                 </div>
               </div>
             </div>
@@ -417,7 +417,7 @@
       </div>
 
       <figure class="media media--narrow">
-        <img src="images/selected-items.webp" width="580" height="231" loading="lazy" alt="Campaign and Adset tabs each showing a '2 Selected' chip above the list." />
+        <img src="images/marketing-dashboard/selected-items.webp" width="580" height="231" loading="lazy" alt="Campaign and Adset tabs each showing a '2 Selected' chip above the list." />
         <figcaption>Helps users keep track of their selected items while navigating the list.</figcaption>
       </figure>
 
@@ -449,13 +449,13 @@
             <div class="carousel__viewport">
               <div class="carousel__track">
                 <div class="carousel__slide" data-title="Connect account" role="group" aria-roledescription="slide" aria-label="1 of 2">
-                  <img src="images/connect-1.webp" width="644" height="363" loading="lazy" alt="Campaign Setting / Connected Account page with Call Dialer, Facebook and Google tabs and a Connect Facebook Ads account prompt." />
+                  <img src="images/marketing-dashboard/connect-1.webp" width="644" height="363" loading="lazy" alt="Campaign Setting / Connected Account page with Call Dialer, Facebook and Google tabs and a Connect Facebook Ads account prompt." />
                   <ol class="notes">
                     <li>Platform tabs – keep multiple accounts organized and prevent confusion.</li>
                   </ol>
                 </div>
                 <div class="carousel__slide" data-title="After account connected through Facebook external page" role="group" aria-roledescription="slide" aria-label="2 of 2">
-                  <img src="images/connect-2.webp" width="644" height="363" loading="lazy" alt="Connected Accounts list showing three Facebook accounts with active, inactive and authentication-expired states." />
+                  <img src="images/marketing-dashboard/connect-2.webp" width="644" height="363" loading="lazy" alt="Connected Accounts list showing three Facebook accounts with active, inactive and authentication-expired states." />
                   <ol class="notes">
                     <li>All connected accounts under campaign setting.</li>
                     <li>Connection status highlights accounts that need attention.</li>
@@ -486,9 +486,9 @@
         <div class="text stack-12 pb-24">
           <p class="media-title">Campaign page</p>
           <div class="compare" data-compare>
-            <img class="compare__after" src="images/campaign-after.webp" width="640" height="378" loading="lazy" alt="After: redesigned All Campaigns page with Marketing Dashboard, Campaigns, Adset, Activity and Call Dialer tabs and campaign cards with channels." />
+            <img class="compare__after" src="images/marketing-dashboard/campaign-after.webp" width="640" height="378" loading="lazy" alt="After: redesigned All Campaigns page with Marketing Dashboard, Campaigns, Adset, Activity and Call Dialer tabs and campaign cards with channels." />
             <div class="compare__before">
-              <img src="images/campaign-before.webp" width="640" height="378" loading="lazy" alt="Before: original All Campaigns page with Campaigns, Activities and My Call Dialer tabs." />
+              <img src="images/marketing-dashboard/campaign-before.webp" width="640" height="378" loading="lazy" alt="Before: original All Campaigns page with Campaigns, Activities and My Call Dialer tabs." />
             </div>
             <span class="compare__divider" aria-hidden="true"><span class="compare__handle">↔</span></span>
             <span class="compare__tag compare__tag--before">Before</span>
@@ -505,13 +505,13 @@
 
         <div class="text stack-12 pb-24">
           <p class="media-title">Before: in-page navigation</p>
-          <img class="rounded" src="images/before-inpage-nav.webp" width="640" height="359" loading="lazy" alt="Create Campaign form with an in-page navigation panel on the left taking up space." />
+          <img class="rounded" src="images/marketing-dashboard/before-inpage-nav.webp" width="640" height="359" loading="lazy" alt="Create Campaign form with an in-page navigation panel on the left taking up space." />
         </div>
 
         <div class="text stack-12 pb-24">
           <p class="media-title">After: stepper</p>
           <div class="stepper-box">
-            <img class="stepper-box__img" src="images/after-stepper.webp" width="592" height="69" loading="lazy" alt="Two stepper states: Channel, Adset, Activity; and Channel, skipped Adset, Activity." />
+            <img class="stepper-box__img" src="images/marketing-dashboard/after-stepper.webp" width="592" height="69" loading="lazy" alt="Two stepper states: Channel, Adset, Activity; and Channel, skipped Adset, Activity." />
             <div class="stack-6">
               <p class="note note--12">Top: in case of Facebook and Google, we will see the ad set.</p>
               <p class="note note--12">Bottom: in case of Email, Call and WhatsApp, we skip the ad set and go directly to the activity (ads).</p>
@@ -524,12 +524,12 @@
           <div class="carousel__media">
             <div class="carousel__viewport">
               <div class="carousel__track">
-                <div class="carousel__slide" data-caption="Create campaign (empty state)" role="group" aria-roledescription="slide" aria-label="1 of 6"><img src="images/create-1.webp" width="640" height="359" loading="lazy" alt="Campaigns page empty state with a Create Campaign button." /></div>
-                <div class="carousel__slide" data-caption="Create campaign form" role="group" aria-roledescription="slide" aria-label="2 of 6"><img src="images/create-2.webp" width="640" height="359" loading="lazy" alt="Create Campaign form with name, description, budget and dates." /></div>
-                <div class="carousel__slide" data-caption="Add channel entry page" role="group" aria-roledescription="slide" aria-label="3 of 6"><img src="images/create-3.webp" width="640" height="359" loading="lazy" alt="Campaign page with no channels yet and an Add Channel button." /></div>
-                <div class="carousel__slide" data-caption="Add channel details" role="group" aria-roledescription="slide" aria-label="4 of 6"><img src="images/create-4.webp" width="640" height="359" loading="lazy" alt="Campaign Setup stepper on the Channel step with channel details and parameters." /></div>
-                <div class="carousel__slide" data-caption="Add ad set details" role="group" aria-roledescription="slide" aria-label="5 of 6"><img src="images/create-5.webp" width="640" height="359" loading="lazy" alt="Add Adset step with adset name, campaign and budget fields." /></div>
-                <div class="carousel__slide" data-caption="Add activity" role="group" aria-roledescription="slide" aria-label="6 of 6"><img src="images/create-6.webp" width="640" height="359" loading="lazy" alt="Add Activity step with activity details and ads UTM information." /></div>
+                <div class="carousel__slide" data-caption="Create campaign (empty state)" role="group" aria-roledescription="slide" aria-label="1 of 6"><img src="images/marketing-dashboard/create-1.webp" width="640" height="359" loading="lazy" alt="Campaigns page empty state with a Create Campaign button." /></div>
+                <div class="carousel__slide" data-caption="Create campaign form" role="group" aria-roledescription="slide" aria-label="2 of 6"><img src="images/marketing-dashboard/create-2.webp" width="640" height="359" loading="lazy" alt="Create Campaign form with name, description, budget and dates." /></div>
+                <div class="carousel__slide" data-caption="Add channel entry page" role="group" aria-roledescription="slide" aria-label="3 of 6"><img src="images/marketing-dashboard/create-3.webp" width="640" height="359" loading="lazy" alt="Campaign page with no channels yet and an Add Channel button." /></div>
+                <div class="carousel__slide" data-caption="Add channel details" role="group" aria-roledescription="slide" aria-label="4 of 6"><img src="images/marketing-dashboard/create-4.webp" width="640" height="359" loading="lazy" alt="Campaign Setup stepper on the Channel step with channel details and parameters." /></div>
+                <div class="carousel__slide" data-caption="Add ad set details" role="group" aria-roledescription="slide" aria-label="5 of 6"><img src="images/marketing-dashboard/create-5.webp" width="640" height="359" loading="lazy" alt="Add Adset step with adset name, campaign and budget fields." /></div>
+                <div class="carousel__slide" data-caption="Add activity" role="group" aria-roledescription="slide" aria-label="6 of 6"><img src="images/marketing-dashboard/create-6.webp" width="640" height="359" loading="lazy" alt="Add Activity step with activity details and ads UTM information." /></div>
               </div>
             </div>
           </div>
@@ -575,7 +575,7 @@
         <article class="stack-24">
           <h3>Multiple ads in one go</h3>
           <figure class="media media--flush" data-no-zoom>
-            <img class="rounded" src="images/future-multiple-ads.webp" width="580" height="267" loading="lazy" alt="Concept form with Activity Details and Ads UTM Information for two ads added at once." />
+            <img class="rounded" src="images/marketing-dashboard/future-multiple-ads.webp" width="580" height="267" loading="lazy" alt="Concept form with Activity Details and Ads UTM Information for two ads added at once." />
             <figcaption>Concept: two ads added in one form</figcaption>
           </figure>
         </article>
@@ -598,6 +598,6 @@
     </nav>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="js/case-study.js" defer></script>
 </body>
 </html>
