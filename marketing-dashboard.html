@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unified Marketing Dashboard for Kylas CRM — Shreya Sinha</title>
+  <meta name="description" content="Case study: bringing Meta, Google Ads, Email and WhatsApp campaign data into one dashboard inside Kylas CRM." />
+
+  <!-- the same self-hosted fonts as the portfolio (Fraunces, DM Sans, IBM Plex Mono) -->
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <!-- same as the portfolio's "back to your garden" link; opens the portfolio at the projects -->
+    <a class="topbar__back" href="Portfolio.html#work"><span aria-hidden="true">↰</span><span>back to portfolio</span></a>
+    <nav class="topbar__links" aria-label="Social">
+      <a href="https://www.linkedin.com/in/shreya-sinha-800814156/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1gBMyA2F8exDv7If3iEyOvsQNI84Tqm3j/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
+      <a href="mailto:sinhashreya1803@gmail.com">Email</a>
+    </nav>
+  </header>
+
+  <!-- Section nav (desktop only) -->
+  <nav class="side-nav" aria-label="Sections">
+    <div class="side-nav__track" aria-hidden="true"><div class="side-nav__progress"></div></div>
+    <a href="#brief"><span>The brief</span><i class="side-nav__icon" aria-hidden="true"></i></a>
+    <a href="#context"><span>Context</span><i class="side-nav__icon" aria-hidden="true"></i></a>
+    <a href="#quick-draft"><span>Quick draft</span><i class="side-nav__icon" aria-hidden="true"></i></a>
+    <a href="#challenges"><span>Challenges</span><i class="side-nav__icon" aria-hidden="true"></i></a>
+    <a href="#design"><span>Design</span><i class="side-nav__icon" aria-hidden="true"></i></a>
+    <a href="#outcome"><span>Outcome</span><i class="side-nav__icon" aria-hidden="true"></i></a>
+    <a href="#future-scope"><span>Future scope</span><i class="side-nav__icon" aria-hidden="true"></i></a>
+  </nav>
+
+  <main id="main" class="page">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="text">
+        <h1 class="hero__title">Unified <span class="accent">Marketing Dashboard</span> for Kylas CRM</h1>
+        <p class="hero__sub">Bringing all kinds of campaign data under one place.</p>
+        <dl class="meta">
+          <div><dt>Role</dt><dd>Product Designer (end-to-end)</dd></div>
+          <div><dt>Team</dt><dd>Pratik Khope (Business Analyst) and me</dd></div>
+          <div><dt>Duration</dt><dd>3 Months</dd></div>
+        </dl>
+      </div>
+      <figure class="media media--wide">
+        <!-- TODO: replace this placeholder with the final dashboard image, e.g.
+             <img src="images/hero.webp" width="860" height="489" alt="The final Marketing Dashboard in Kylas CRM" /> -->
+        <div class="placeholder" role="img" aria-label="Final Marketing Dashboard image coming soon"></div>
+        <figcaption>The final Marketing Dashboard</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ 01 BRIEF ============ -->
+    <section id="brief" class="text">
+      <p class="eyebrow">Brief</p>
+      <h2>One dashboard to track the performance of every marketing campaign, across all channels.</h2>
+      <ul class="bullets">
+        <li>See external platforms (Meta, Google) and internal Kylas (WhatsApp, Email) campaigns in one view.</li>
+        <li>View budget, reach, engagement and profitability in one place, without switching platforms.</li>
+        <li>Show which campaigns or channels are performing better.</li>
+        <li>Design for future channels like LinkedIn and X (Twitter).</li>
+      </ul>
+      <div class="users">
+        <h4>Users</h4>
+        <ul class="steps">
+          <li class="card"><strong>Business Leaders</strong><span class="label">Need high-level insights</span></li>
+          <li class="card"><strong>Marketing Managers</strong><span class="label">Need detailed campaign analytics.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 02 CONTEXT ============ -->
+    <section id="context" class="stack-64">
+      <div class="text stack-24">
+        <div class="stack-16">
+          <p class="eyebrow">Context</p>
+          <h2>How marketing teams track campaigns today</h2>
+          <ul class="bullets">
+            <li>Meta / Google Ads — show performance metrics.</li>
+            <li>Supermetrics — brings reporting data from different platforms into one place.</li>
+            <li>Power BI / Looker Studio — turns the combined data into one easy-to-understand dashboard.</li>
+          </ul>
+        </div>
+
+        <div class="stack-12">
+          <p class="label">Typical workflow and its limitations</p>
+          <div class="workflow">
+            <ol class="flow flow--fill">
+              <li class="chip">Meta / Google Ads</li>
+              <li class="chip">Supermetrics</li>
+              <li class="chip">Google Sheets</li>
+              <li class="chip">Power BI / Looker Studio</li>
+            </ol>
+            <div class="workflow__crm">
+              <div class="workflow__link">
+                <span class="dash" aria-hidden="true"></span>
+                <span class="workflow__nolink">no link</span>
+                <span class="dash" aria-hidden="true"></span>
+                <span class="chip chip--muted">Kylas CRM</span>
+              </div>
+              <p class="note">Meta and Google Ads don’t connect to the CRM, so they can’t show which leads turned into MQLs or SQLs.</p>
+            </div>
+            <p class="note workflow__manual">Manual step: a direct Supermetrics to Power BI/Looker Studio link is expensive.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-24">
+        <div class="text"><h2>Understanding the product language</h2></div>
+        <div class="text stack-12">
+          <p class="label">Funnel flow architecture</p>
+          <ol class="flow flow--even">
+            <li class="chip">Leads</li>
+            <li class="chip">MQL</li>
+            <li class="chip">SQL</li>
+            <li class="chip">Deal</li>
+          </ol>
+        </div>
+        <div class="text stack-12">
+          <p class="label">Abbreviations &amp; terminology</p>
+          <dl class="terms">
+            <div><dt>CPL</dt><dd>Cost Per Lead</dd></div>
+            <div><dt>CTR</dt><dd>Click-Through Rate</dd></div>
+            <div><dt>MQL</dt><dd>Marketing Qualified Lead</dd></div>
+            <div><dt>SQL</dt><dd>Sales Qualified Lead</dd></div>
+            <div><dt>CMQL</dt><dd>Cost Per MQL</dd></div>
+            <div><dt>CSQL</dt><dd>Cost Per SQL</dd></div>
+            <div><dt>CAC</dt><dd>Customer Acquisition Cost</dd></div>
+            <div><dt>ROI</dt><dd>Return on Investment</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 QUICK DRAFT ============ -->
+    <section id="quick-draft" class="text">
+      <p class="eyebrow">Quick draft</p>
+      <div class="stack-12">
+        <h2>Quick draft to align and explore</h2>
+        <p>Built fast with light research, to align with the team before going deep and to open up for more questions.</p>
+      </div>
+      <div class="stack-48 pt-8">
+        <figure class="media">
+          <img src="images/quick-draft-1.webp" width="644" height="363" loading="lazy" alt="Quick draft of the Marketing Dashboard: KPI cards on top and a list of campaigns below." />
+          <figcaption>There's no point showing a list of campaigns with only a name and description and no metrics. Decisions depend on a few key metrics; detailed metrics are only for deeper analysis.</figcaption>
+        </figure>
+        <figure class="media">
+          <img src="images/quick-draft-2.webp" width="640" height="359" loading="lazy" alt="Quick draft of a campaign detail page with overview metrics and a channel-wise performance chart." />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 04 CHALLENGES ============ -->
+    <section id="challenges" class="stack-64" data-no-zoom>
+      <div class="text">
+        <p class="eyebrow">Challenges</p>
+        <h2>New challenges</h2>
+        <p>Stakeholders liked the direction. Their questions after seeing the draft shaped the second round of research below.</p>
+      </div>
+
+      <!-- Challenge 1 -->
+      <article class="stack-24">
+        <div class="text stack-12">
+          <p class="label label--dark">Challenge 1</p>
+          <h3>Where is the data coming from?</h3>
+          <p>Ad metrics come from the Facebook Ads and Google APIs, while MQL, SQL, Email and WhatsApp metrics come from Kylas CRM. The dashboard combines both.</p>
+        </div>
+        <div class="text">
+          <div class="sources">
+            <ul class="sources__list">
+              <li class="card"><strong>Facebook Ads API</strong><span>Metrics like Impressions, Reach, CPL, CTR, Leads etc.</span></li>
+              <li class="card"><strong>Google API</strong><span>Metrics like Impressions, Reach, CPL, CTR, Leads etc.</span></li>
+              <li class="card"><strong>Kylas CRM</strong><span>MQL, SQL, Email and WhatsApp metrics</span></li>
+            </ul>
+            <span class="sources__arrow" aria-hidden="true">→</span>
+            <div class="card card--target"><strong>Marketing Dashboard</strong><span>Combined data</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Challenge 2 -->
+      <article class="stack-24">
+        <div class="text stack-12">
+          <p class="label">Challenge 2</p>
+          <h3>How will we find MQL and SQL?</h3>
+          <p>Through MQL and SQL mapping, as every company defines MQL and SQL differently.</p>
+        </div>
+        <figure class="media">
+          <img src="images/mql-sql-mapping.webp" width="640" height="192" loading="lazy" alt="Add Parameters form: MQL is defined for the Lead entity using Pipeline In Pipeline 1 and Pipeline 2." />
+        </figure>
+      </article>
+
+      <!-- Challenge 3 -->
+      <article class="stack-24">
+        <div class="text stack-12">
+          <p class="label">Challenge 3</p>
+          <h3>How can the dashboard scale when new platforms like LinkedIn and X (Twitter) are added?</h3>
+          <p>Advertising platforms follow a similar three-level hierarchy.</p>
+        </div>
+        <div class="text">
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Universal campaign structure across ad platforms">
+            <table class="structure">
+              <thead>
+                <tr>
+                  <th scope="col">Structural Element</th>
+                  <th scope="col">Google Ads (Search)</th>
+                  <th scope="col">Facebook (Meta) Ads</th>
+                  <th scope="col">LinkedIn Ads</th>
+                  <th scope="col">X (Twitter) Ads</th>
+                  <th scope="col">Reddit Ads</th>
+                  <th scope="col">TikTok Ads</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Tier 1 (Goal &amp; Budget)</th>
+                  <td>Campaign</td><td>Campaign</td><td>Campaign</td><td>Campaign</td><td>Campaign</td><td>Campaign</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tier 2 (Targeting &amp; Bid)</th>
+                  <td>Ad group</td><td>Ad set</td><td>Ad set</td><td>Ad group</td><td>Ad group</td><td>Ad group</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tier 3 (Creative/Asset)</th>
+                  <td>Ad / Keyword</td><td>Ad</td><td>Ad</td><td>Ad</td><td>Ad</td><td>Ad</td>
+                </tr>
+                <tr class="structure__budget">
+                  <th scope="row">Budget Control</th>
+                  <td>Campaign level only</td><td>Campaign / Ad group / Campaign</td><td>Campaign Group / Campaign</td><td>Campaign / Ad group</td><td>Campaign / Ad group</td><td>Campaign / Ad group</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <!-- Challenge 4 -->
+      <article class="stack-24">
+        <div class="text stack-12">
+          <p class="label">Challenge 4</p>
+          <h3>We already have WhatsApp and Email. How will the new design be a part of the whole?</h3>
+          <p>Facebook and Google join the existing Kylas campaign hierarchy as new channels, next to Email and WhatsApp.</p>
+        </div>
+        <!-- Kylas campaign hierarchy: a CRM campaign splits into channels; Facebook and Google join Email and WhatsApp -->
+        <figure class="media">
+          <div class="hierarchy" tabindex="0" role="region" aria-label="Kylas campaign hierarchy">
+            <div class="hierarchy__chart">
+              <div class="hierarchy__root"><span class="label">CRM campaign</span><strong>CRM Diwali campaign</strong></div>
+              <div class="hierarchy__branch" aria-hidden="true"></div>
+              <div class="hierarchy__level">
+                <p class="hierarchy__level-name">Channel</p>
+                <span class="hierarchy__node" data-kind="existing">Email</span>
+                <span class="hierarchy__node" data-kind="existing">WhatsApp</span>
+                <span class="hierarchy__node" data-kind="new">Facebook</span>
+                <span class="hierarchy__node" data-kind="new">Google</span>
+              </div>
+              <div class="hierarchy__level">
+                <p class="hierarchy__level-name">Campaign</p>
+                <span class="hierarchy__node" data-kind="existing">Email Campaign</span>
+                <span class="hierarchy__node" data-kind="existing">WhatsApp Campaign</span>
+                <span class="hierarchy__node" data-kind="new">Diwali Campaign</span>
+                <span class="hierarchy__node" data-kind="new">Diwali Campaign</span>
+              </div>
+              <div class="hierarchy__level">
+                <p class="hierarchy__level-name">Ad set</p>
+                <span class="hierarchy__node" data-kind="empty" aria-label="No ad set">–</span>
+                <span class="hierarchy__node" data-kind="empty" aria-label="No ad set">–</span>
+                <span class="hierarchy__node" data-kind="new">Ad set</span>
+                <span class="hierarchy__node" data-kind="new">Ad group</span>
+              </div>
+              <div class="hierarchy__level">
+                <p class="hierarchy__level-name">Activity</p>
+                <span class="hierarchy__node" data-kind="existing" data-after-empty="true">Message/Attachment</span>
+                <span class="hierarchy__node" data-kind="existing" data-after-empty="true">Message/Attachment</span>
+                <span class="hierarchy__node" data-kind="new">Images/Videos</span>
+                <span class="hierarchy__node" data-kind="new">Images/Videos · Search</span>
+              </div>
+            </div>
+          </div>
+          <ul class="hierarchy__legend">
+            <li class="hierarchy__key" data-kind="existing">Already in Kylas</li>
+            <li class="hierarchy__key" data-kind="new">New: Facebook and Google</li>
+          </ul>
+        </figure>
+      </article>
+    </section>
+
+    <!-- ============ 05 DESIGN ============ -->
+    <section id="design" class="stack-64">
+      <div class="stack-24">
+        <div class="text">
+          <p class="eyebrow">Design</p>
+          <h2>Marketing Dashboard</h2>
+        </div>
+        <div class="stack-12">
+        <div class="text decision decision--pad">
+          <div class="decision__head">
+            <div>
+              <p class="label">Key decision</p>
+              <h4>Separate dashboards, or one?</h4>
+            </div>
+            <img class="decision__toggle" src="images/toggle.webp" width="201" height="36" alt="Manager View / Operator View toggle" />
+          </div>
+          <p>At first we added the option for different dashboards. Later, we designed a single dashboard where managers see the overall picture and operators can drill down for detailed analysis.</p>
+        </div>
+        <figure class="media">
+          <img src="images/dashboard-overview.webp" width="644" height="363" loading="lazy" alt="Marketing Dashboard overview: KPI cards (campaigns, budget, leads, MQL, SQL, conversion rate) above a table of Kylas campaigns." />
+          <figcaption class="pb-36">Overview: KPIs and the list of Kylas campaigns</figcaption>
+        </figure>
+        <figure class="media">
+          <img src="images/dashboard-channels.webp" width="644" height="363" loading="lazy" alt="Marketing Dashboard with a channel-wise performance chart next to a conversion funnel from impressions to SQL." />
+          <figcaption class="pb-36">Channel-wise performance and the conversion funnel</figcaption>
+        </figure>
+        </div>
+      </div>
+
+      <!-- Navigation carousel -->
+      <div class="stack-16">
+        <div class="text"><h3>Navigation</h3></div>
+        <div class="carousel text" data-carousel data-no-zoom aria-roledescription="carousel" aria-label="Navigation options">
+          <div class="carousel__media carousel__media--tabs">
+            <div class="carousel__viewport">
+              <div class="carousel__track">
+                <div class="carousel__slide" data-caption="Original" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                  <div class="tabs"><span>Campaigns</span><span>Activities</span><span>My Call Dialer</span></div>
+                </div>
+                <div class="carousel__slide" data-caption="Option 1: Create a separate Channels tab for Meta/Google campaigns." role="group" aria-roledescription="slide" aria-label="2 of 3">
+                  <div class="tabs"><span class="is-new is-wide">Marketing Dashboard</span><span>Campaigns</span><span class="is-new">Channel</span><span class="is-new">Ad set</span><span>Activity</span><span>Call Dialer</span></div>
+                </div>
+                <div class="carousel__slide" data-caption="Option 2: Moved channels under Campaign hierarchy (reduced unnecessary navigation)." data-final role="group" aria-roledescription="slide" aria-label="3 of 3">
+                  <div class="tabs"><span class="is-new is-wide">Marketing Dashboard</span><span>Campaigns</span><span class="is-new">Ad set</span><span>Activity</span><span>Call Dialer</span></div>
+                </div>
+              </div>
+            </div>
+            <span class="tick" aria-label="Chosen option"></span>
+          </div>
+          <div class="carousel__footer">
+            <p class="carousel__caption" aria-live="polite"></p>
+            <div class="carousel__controls">
+              <button class="carousel__btn" data-prev aria-label="Previous">←</button>
+              <div class="carousel__dots"></div>
+              <button class="carousel__btn" data-next aria-label="Next">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Funnel iterations -->
+      <div class="stack-16">
+        <div class="text"><h3>Funnel iterations</h3></div>
+        <div class="carousel text" data-carousel data-no-zoom aria-roledescription="carousel" aria-label="Funnel iterations">
+          <div class="carousel__media">
+            <div class="carousel__viewport">
+              <div class="carousel__track">
+                <div class="carousel__slide" data-caption="Structure wasn’t looking like a funnel, more like a bar graph." role="group" aria-roledescription="slide" aria-label="1 of 4">
+                  <img src="images/funnel-1.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 1: right-aligned bars of decreasing width with conversion percentages beside them." />
+                </div>
+                <div class="carousel__slide" data-caption="The triangular space between the conversion and funnel graph was looking so odd." role="group" aria-roledescription="slide" aria-label="2 of 4">
+                  <img src="images/funnel-2.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 2: bars with a separate grey conversion column, leaving a triangular gap." />
+                </div>
+                <div class="carousel__slide" data-caption="The conversion data between bars made the funnel too tall." role="group" aria-roledescription="slide" aria-label="3 of 4">
+                  <img src="images/funnel-3.webp" width="640" height="354" loading="lazy" alt="Funnel iteration 3: centred bars with conversion rates placed between each bar." />
+                </div>
+                <div class="carousel__slide" data-caption="Incorporated all metrics inside the bar, increasing the bar height." data-final role="group" aria-roledescription="slide" aria-label="4 of 4">
+                  <img src="images/funnel-4.webp" width="640" height="354" loading="lazy" alt="Final funnel: taller bars with the label, value and drop-off percentage inside each bar." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__footer">
+            <p class="carousel__caption" aria-live="polite"></p>
+            <div class="carousel__controls">
+              <button class="carousel__btn" data-prev aria-label="Previous">←</button>
+              <div class="carousel__dots"></div>
+              <button class="carousel__btn" data-next aria-label="Next">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vertical vs horizontal -->
+      <div class="stack-16">
+        <div class="text"><h3>Vertical vs horizontal marketing dashboard</h3></div>
+        <div class="carousel carousel--tall-caption text" data-carousel data-no-zoom aria-roledescription="carousel" aria-label="Vertical vs horizontal layouts">
+          <div class="carousel__media">
+            <div class="carousel__viewport">
+              <div class="carousel__track">
+                <div class="carousel__slide" data-caption="Vertical view: Easy to understand, but deeper metrics needed extra clicks and comparing Campaigns, Ad sets and Ads was hard." role="group" aria-roledescription="slide" aria-label="1 of 3">
+                  <img src="images/view-1.webp" width="640" height="322" loading="lazy" alt="Vertical view: a campaign table where ad sets and ads expand underneath each campaign." />
+                </div>
+                <div class="carousel__slide" data-caption="Horizontal view: Matches the horizontal layout users already know from Google Ads and Meta Ads, reducing the learning curve." role="group" aria-roledescription="slide" aria-label="2 of 3">
+                  <img src="images/view-2.webp" width="640" height="322" loading="lazy" alt="Horizontal view: Campaigns, Adsets and Ads shown as three side-by-side columns." />
+                </div>
+                <!-- TODO: replace the caption below with the final one -->
+                <div class="carousel__slide" data-caption="Add a caption for this view." data-final role="group" aria-roledescription="slide" aria-label="3 of 3">
+                  <img src="images/view-3.webp" width="640" height="322" loading="lazy" alt="Final view: Campaign, Adset and Ads tabs over a single campaign table." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__footer">
+            <p class="carousel__caption" aria-live="polite"></p>
+            <div class="carousel__controls">
+              <button class="carousel__btn" data-prev aria-label="Previous">←</button>
+              <div class="carousel__dots"></div>
+              <button class="carousel__btn" data-next aria-label="Next">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="media media--narrow">
+        <img src="images/selected-items.webp" width="580" height="231" loading="lazy" alt="Campaign and Adset tabs each showing a '2 Selected' chip above the list." />
+        <figcaption>Helps users keep track of their selected items while navigating the list.</figcaption>
+      </figure>
+
+      <!-- Two steps overview -->
+      <div class="text stack-16">
+        <h2>Setting up campaigns in two steps</h2>
+        <ol class="steps">
+          <li class="card"><span class="label">Step 1</span><strong>Connect ad accounts</strong></li>
+          <li class="card"><span class="label">Step 2</span><strong>Create campaign, ad set and activity</strong></li>
+        </ol>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="stack-24">
+        <div class="text stack-12">
+          <p class="label">Step 1</p>
+          <h2>Connect your ad accounts</h2>
+          <p>Users link their Meta and Google ad accounts to Kylas before creating campaigns.</p>
+          <div class="decision pt-12">
+            <p class="label">Key decision</p>
+            <h4>Where should account connections live: during campaign creation, or in a separate place?</h4>
+            <p>Campaign Settings has a dedicated place to manage all connected accounts. It also appears in step 2 of campaign creation if an account hasn't been connected yet.</p>
+          </div>
+        </div>
+
+        <div class="carousel text" data-carousel aria-roledescription="carousel" aria-label="Connect account screens">
+          <p class="media-title carousel__title" aria-live="polite">Connect account</p>
+          <div class="carousel__media">
+            <div class="carousel__viewport">
+              <div class="carousel__track">
+                <div class="carousel__slide" data-title="Connect account" role="group" aria-roledescription="slide" aria-label="1 of 2">
+                  <img src="images/connect-1.webp" width="644" height="363" loading="lazy" alt="Campaign Setting / Connected Account page with Call Dialer, Facebook and Google tabs and a Connect Facebook Ads account prompt." />
+                  <ol class="notes">
+                    <li>Platform tabs – keep multiple accounts organized and prevent confusion.</li>
+                  </ol>
+                </div>
+                <div class="carousel__slide" data-title="After account connected through Facebook external page" role="group" aria-roledescription="slide" aria-label="2 of 2">
+                  <img src="images/connect-2.webp" width="644" height="363" loading="lazy" alt="Connected Accounts list showing three Facebook accounts with active, inactive and authentication-expired states." />
+                  <ol class="notes">
+                    <li>All connected accounts under campaign setting.</li>
+                    <li>Connection status highlights accounts that need attention.</li>
+                    <li>Cards with key account details for quick management.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__footer">
+            <div class="carousel__controls carousel__controls--chevron">
+              <button class="carousel__btn" data-prev aria-label="Previous"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2.5 4 6l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <div class="carousel__dots"></div>
+              <button class="carousel__btn" data-next aria-label="Next"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="stack-24">
+        <div class="text stack-12">
+          <p class="label">Step 2</p>
+          <h2>Create campaign, ad set and activity</h2>
+          <p><strong class="dark">Purpose:</strong> Define where the external campaigns will rest, and link every ad set and activity to its parent campaign for accurate reporting and tracking.</p>
+        </div>
+
+        <div class="text stack-12 pb-24">
+          <p class="media-title">Campaign page</p>
+          <div class="compare" data-compare>
+            <img class="compare__after" src="images/campaign-after.webp" width="640" height="378" loading="lazy" alt="After: redesigned All Campaigns page with Marketing Dashboard, Campaigns, Adset, Activity and Call Dialer tabs and campaign cards with channels." />
+            <div class="compare__before">
+              <img src="images/campaign-before.webp" width="640" height="378" loading="lazy" alt="Before: original All Campaigns page with Campaigns, Activities and My Call Dialer tabs." />
+            </div>
+            <span class="compare__divider" aria-hidden="true"><span class="compare__handle">↔</span></span>
+            <span class="compare__tag compare__tag--before">Before</span>
+            <span class="compare__tag compare__tag--after">After</span>
+            <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
+          </div>
+        </div>
+
+        <div class="text decision">
+          <p class="label">Key decision</p>
+          <h4>In-page navigation or a stepper?</h4>
+          <p>A stepper. In-page navigation occupied valuable screen space, taking up to 40% of horizontal space, and caused a lot of scrolling.</p>
+        </div>
+
+        <div class="text stack-12 pb-24">
+          <p class="media-title">Before: in-page navigation</p>
+          <img class="rounded" src="images/before-inpage-nav.webp" width="640" height="359" loading="lazy" alt="Create Campaign form with an in-page navigation panel on the left taking up space." />
+        </div>
+
+        <div class="text stack-12 pb-24">
+          <p class="media-title">After: stepper</p>
+          <div class="stepper-box">
+            <img class="stepper-box__img" src="images/after-stepper.webp" width="592" height="69" loading="lazy" alt="Two stepper states: Channel, Adset, Activity; and Channel, skipped Adset, Activity." />
+            <div class="stack-6">
+              <p class="note note--12">Top: in case of Facebook and Google, we will see the ad set.</p>
+              <p class="note note--12">Bottom: in case of Email, Call and WhatsApp, we skip the ad set and go directly to the activity (ads).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel text" data-carousel aria-roledescription="carousel" aria-label="Create campaign flow">
+          <p class="media-title">Create campaign flow</p>
+          <div class="carousel__media">
+            <div class="carousel__viewport">
+              <div class="carousel__track">
+                <div class="carousel__slide" data-caption="Create campaign (empty state)" role="group" aria-roledescription="slide" aria-label="1 of 6"><img src="images/create-1.webp" width="640" height="359" loading="lazy" alt="Campaigns page empty state with a Create Campaign button." /></div>
+                <div class="carousel__slide" data-caption="Create campaign form" role="group" aria-roledescription="slide" aria-label="2 of 6"><img src="images/create-2.webp" width="640" height="359" loading="lazy" alt="Create Campaign form with name, description, budget and dates." /></div>
+                <div class="carousel__slide" data-caption="Add channel entry page" role="group" aria-roledescription="slide" aria-label="3 of 6"><img src="images/create-3.webp" width="640" height="359" loading="lazy" alt="Campaign page with no channels yet and an Add Channel button." /></div>
+                <div class="carousel__slide" data-caption="Add channel details" role="group" aria-roledescription="slide" aria-label="4 of 6"><img src="images/create-4.webp" width="640" height="359" loading="lazy" alt="Campaign Setup stepper on the Channel step with channel details and parameters." /></div>
+                <div class="carousel__slide" data-caption="Add ad set details" role="group" aria-roledescription="slide" aria-label="5 of 6"><img src="images/create-5.webp" width="640" height="359" loading="lazy" alt="Add Adset step with adset name, campaign and budget fields." /></div>
+                <div class="carousel__slide" data-caption="Add activity" role="group" aria-roledescription="slide" aria-label="6 of 6"><img src="images/create-6.webp" width="640" height="359" loading="lazy" alt="Add Activity step with activity details and ads UTM information." /></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__footer">
+            <p class="carousel__caption" aria-live="polite"></p>
+            <div class="carousel__controls">
+              <button class="carousel__btn" data-prev aria-label="Previous">←</button>
+              <div class="carousel__dots"></div>
+              <button class="carousel__btn" data-next aria-label="Next">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 OUTCOME ============ -->
+    <section id="outcome" class="text">
+      <p class="eyebrow">Outcome</p>
+      <h2>What shipped</h2>
+      <p>The Unified Marketing Dashboard is live in Kylas CRM. Meta, Google Ads, Email and WhatsApp campaigns are now tracked in one place, next to the CRM funnel.</p>
+      <div class="flow-row">
+        <span class="label flow-row__label">Before</span>
+        <ol class="flow">
+          <li class="chip chip--13">Meta / Google Ads</li>
+          <li class="chip chip--13">Supermetrics</li>
+          <li class="chip chip--13">Google Sheets</li>
+          <li class="chip chip--13">Power BI / Looker Studio</li>
+        </ol>
+      </div>
+      <div class="flow-row">
+        <span class="label flow-row__label">After</span>
+        <ol class="flow">
+          <li class="chip chip--13">Meta / Google Ads + Kylas CRM</li>
+          <li class="chip chip--13">Kylas Marketing Dashboard</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 07 FUTURE SCOPE ============ -->
+    <section id="future-scope" class="text stack-24">
+      <p class="eyebrow">Future scope</p>
+      <div class="stack-48">
+        <article class="stack-24">
+          <h3>Multiple ads in one go</h3>
+          <figure class="media media--flush" data-no-zoom>
+            <img class="rounded" src="images/future-multiple-ads.webp" width="580" height="267" loading="lazy" alt="Concept form with Activity Details and Ads UTM Information for two ads added at once." />
+            <figcaption>Concept: two ads added in one form</figcaption>
+          </figure>
+        </article>
+        <article class="stack-12">
+          <h3>LinkedIn and X (Twitter)</h3>
+          <p>Can be added easily using the same three-level campaign structure.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer: the same sign-off as the bottom of the portfolio -->
+  <footer class="site-footer">
+    <span class="site-footer__name">SHREYA SINHA</span>
+    <nav class="site-footer__links" aria-label="Social">
+      <a class="site-footer__link" href="https://www.linkedin.com/in/shreya-sinha-800814156/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="site-footer__link" href="https://drive.google.com/file/d/1gBMyA2F8exDv7If3iEyOvsQNI84Tqm3j/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
+      <a class="site-footer__link" href="mailto:sinhashreya1803@gmail.com">Email</a>
+    </nav>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

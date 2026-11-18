@@ -1,0 +1,4 @@
+# local backups and Mac files stay off GitHub
+_backup/
+.DS_Store
+.vscode/
